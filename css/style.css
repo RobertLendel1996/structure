@@ -731,6 +731,10 @@ body::after {
   left: 0;
   width: 100%;
   z-index: 50;
+  -webkit-transform: translate(0px, -0.625rem);
+      -ms-transform: translate(0px, -0.625rem);
+          transform: translate(0px, -0.625rem);
+  opacity: 0;
 }
 
 .header__body {
@@ -750,6 +754,16 @@ body::after {
 .header__logo {
   position: relative;
   z-index: 3;
+}
+
+.loaded .header {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-transform: translate(0px, 0rem);
+      -ms-transform: translate(0px, 0rem);
+          transform: translate(0px, 0rem);
+  opacity: 1;
 }
 
 .menu {
@@ -1117,9 +1131,9 @@ body::after {
 .main-block {
   margin-top: 5.4375rem;
   opacity: 0;
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: translate(0px, 0.625rem);
+      -ms-transform: translate(0px, 0.625rem);
+          transform: translate(0px, 0.625rem);
 }
 
 .main-block__body {
@@ -1188,13 +1202,13 @@ body::after {
 }
 
 .loaded .main-block {
-  -webkit-transition: all 1.5s ease 0s;
-  -o-transition: all 1.5s ease 0s;
-  transition: all 1.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0.2s;
+  -o-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+  -webkit-transform: translate(0px, 0rem);
+      -ms-transform: translate(0px, 0rem);
+          transform: translate(0px, 0rem);
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
 }
 
 .offer {
