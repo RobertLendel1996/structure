@@ -4951,7 +4951,7 @@
         const search = document.querySelector(".item-actions-header_search");
         document.addEventListener("click", menu);
         function menu(event) {
-            if (event.target.closest(".item-actions-header__icon")) search.classList.toggle("_open");
+            if (event.target.closest(".item-actions-header_search")) search.classList.toggle("_open");
             if (!event.target.closest(".item-actions-header_search")) search.classList.remove("_open");
         }
         if (isMobile.any()) {
